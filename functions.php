@@ -1,8 +1,8 @@
 <?php
 
-	add_action( 'init', 'register_post_types' );
+	add_action( 'init', 'register_post_types_movie' );
 
-	function register_post_types(){
+	function register_post_types_movie(){
 		register_post_type('movie', array(
 			'label'  => null,
 			'labels' => array(
@@ -35,7 +35,7 @@
 			//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
 			//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
 			'hierarchical'        => false,
-			'supports'            => array('title','editor'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+			'supports'            => array('title','editor','thumbnail'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
 			'taxonomies'          => array(),
 			'has_archive'         => false,
 			'rewrite'             => true,
