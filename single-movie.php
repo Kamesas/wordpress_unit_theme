@@ -5,7 +5,7 @@
 			
 	    <?php while ( have_posts() ) : the_post(); ?>
 				
-				<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+				<h1><?php the_title(); ?></h1>
 				<?php the_terms( get_the_ID(), 'Genres', 'Жанры: ', '/', "." ); ?>
 		    <?php the_content() ?>
 		    <?php the_post_thumbnail(); ?>				
