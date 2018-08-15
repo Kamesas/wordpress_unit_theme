@@ -22,7 +22,7 @@
 			'description'         => '',
 			'public'              => true,
 			'publicly_queryable'  => true, // зависит от public
-			'exclude_from_search' => true, // зависит от public
+			'exclude_from_search' => false, // зависит от public
 			'show_ui'             => true, // зависит от public
 			'show_in_menu'        => true, // показывать ли в меню адмнки
 			'show_in_admin_bar'   => true, // по умолчанию значение show_in_menu
