@@ -1,7 +1,6 @@
 <?php 
 	/*
-		Template Name: Movie
-		Template Post Type: post, page, movie
+		Template Name: Movie		
 	*/
 ?>
 
