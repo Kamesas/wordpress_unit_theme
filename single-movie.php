@@ -8,7 +8,9 @@
 				<h1><?php the_title(); ?></h1>
 				<?php the_terms( get_the_ID(), 'Genres', 'Жанры: ', '/', "." ); ?>
 		    <?php the_content() ?>
-		    <?php the_post_thumbnail(); ?>				
+		    <?php the_post_thumbnail(); ?>
+		    	
+		    <?php edit_post_link( $link, $before, $after, $id, $class ); ?>			
 
 			<?php endwhile; // end of the loop. ?>
 
