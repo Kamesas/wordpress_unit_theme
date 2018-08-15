@@ -30,6 +30,8 @@
 					?>
 
 				    <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+				    <div>Стоимость сеанса: <?php the_field('price'); ?> $</div>
+				    <div>Дата выхода: <?php the_field('дата_выхода'); ?> </div>
 				    <?php the_excerpt(); ?>
 				    <?php the_post_thumbnail(); ?> 
 
